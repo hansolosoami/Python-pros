@@ -1,0 +1,23 @@
+a="hello world"
+
+a[0]
+
+a[-1]
+
+a[0:5]
+
+ a[5:]
+
+range(10)
+
+range(10)[1:7]
+
+
+lst=[23,23,43,54,23,11,54,77,888,34,1]
+def custom_sort(lst):
+    for i in range(0,len(lst)-1):
+        for j in range(i+1,len(lst)):
+            if lst[i][1]<lst[j][1]:
+                lst[i],lst[j]=lst[j],lst[i]
+    return lst
+
